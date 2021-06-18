@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ececec;
+    color: #2C2C2C;
+    font-size: 16px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 100px;
+    display: grid;
+    grid-template-rows: auto auto;
+    background-color: #000000;
+}
+.header a {
+    color: #ececec;
+    text-decoration: none;
+}
+.header .logo {
+    display: grid;
+    place-items: center;
+    padding: 15px 0 5px 0;
+}
+.header .logo img {
+    width: 40px;
+}
+.header .name {
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    word-spacing: .8rem;
+}
+
+.landing {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: calc(100vh - 100px);
+    max-height: 1080px;
+}
+.landing .left {
+    background-image: url(../image/seb-home.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+.landing .right{
+    background-image: linear-gradient(90deg, #ffcc00 33.33%, #ff0000 33.33%, #ff0000 66.66%, #000000 66.66%);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
